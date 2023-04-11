@@ -1,12 +1,25 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { useDispatch } from "react-redux";
+import { toggleMenu } from "./utils/appSlice";
 
 const Head = () => {
+  const dispatch = useDispatch();
+
+  const toggleMenuHandler = () => {
+    dispatch(toggleMenu());
+  };
+  
   return (
     <div className="grid grid-flow-col p-3 m-2 shadow-lg">
       <div className="flex col-span-1 ">
-        <img className="h-10 w-10" alt="menu" src="menu.png" />
+        <img
+          onClick={() => toggleMenuHandler()}
+          className="h-10 w-10 cursor-pointer"
+          alt="menu"
+          src="menu.png"
+        />
 
         <img className="h-15 w-30 mx-2" alt="Home" src="youtube.png" />
       </div>
