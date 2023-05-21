@@ -32,10 +32,10 @@ const SideBar = () => {
 
       <h1 className="font-bold">Subscriptions</h1>
       <ul>
-        <li>Music</li>
-        <li>Sports</li>
-        <li>Gaming</li>
-        <li>Movies</li>
+        <li className="p-2">Music</li>
+        <li className="p-2">Sports</li>
+        <li className="p-2">Gaming</li>
+        <li className="p-2">Movies</li>
       </ul>
     </div>
   );
