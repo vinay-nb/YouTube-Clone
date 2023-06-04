@@ -21,13 +21,14 @@ const LiveChat = () => {
     }, 1000);
 
     return () => clearInterval(timer);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <>
       <div
         className="w-full h-[400px] ml-2 p-2 border border-gray-500 
-    bg-gray-100 rounded-md overflow-y-hidden overflow-y-scroll flex flex-col-reverse"
+    bg-gray-100 rounded-md overflow-y-hidden flex flex-col-reverse"
       >
         <div>
           {chatMessages.map((c, idx) => (
