@@ -1,11 +1,11 @@
 # YouTube-Clone
 
 **Features -**
-- Data from live api
+- Fetching Data from live API
 - Nested comments
-- Optimized search using debouncing and cacheing using redux store
-- Live chat using pooling concept
-- Styled using Tailwing css
+- Optimized search using debouncing and caching using redux store
+- Live chat using the pooling concept
+- Styled using Tailwind CSS
 
 **Local Setup -**
 - Download the repository
