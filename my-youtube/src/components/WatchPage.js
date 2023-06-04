@@ -10,6 +10,7 @@ function WatchPage() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(closeMenu());
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <div className="flex flex-col w-full">
